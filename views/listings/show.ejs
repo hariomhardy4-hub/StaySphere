@@ -22,7 +22,7 @@
     </div>
 
 <br>
-<%if(res.locals.currUser && list.owner._id.equals(res.locals.currUser._id)) { %> 
+<%if(currUser && list.owner._id.equals(currUser._id)) { %> 
 
 <div class="btns mb-3">
     <a 
@@ -39,7 +39,7 @@
 <div class="col-8 offset-3 mb-3"> <!-- taki ise bhi same spacing mile -->
     
 
-    <% if(res.locals.currUser) { %>
+    <% if(currUser) { %>
   <hr/>
     <h4> Leave a Review</h4>
     <form  
