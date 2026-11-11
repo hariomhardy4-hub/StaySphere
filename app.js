@@ -110,9 +110,9 @@ app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
 app.use("/",userRouter);
 
-app.use((req,res,next )=> {  // *star ka mtlb haiagr request kisi bhi route se match nhi hui to ye wale se zarur match hogi hi hogi
-    next( new ExpressError(404,"Page Not found!"));
-});
+// app.use((req,res,next )=> {  // *star ka mtlb haiagr request kisi bhi route se match nhi hui to ye wale se zarur match hogi hi hogi
+//     next( new ExpressError(404,"Page Not found!"));
+// });
 
 app.use((err,req,res,next)=> {
     let {statusCode = 500   ,message = "Something went wrong"} = err;// pehle deconstruct kiya humne
