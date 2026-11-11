@@ -71,9 +71,9 @@ const sessionOptions = {
 
 
 
-app.get("/",(req,res)=>{
- res.send("hi i am root");
-});  //  bahar se bhi koi request bej paa rha tha  / pe
+// app.get("/",(req,res)=>{
+//  res.send("hi i am root");
+// });  //  bahar se bhi koi request bej paa rha tha  / pe
 
 app.use(session(sessionOptions));// session method ke andr session option dhyan rahe hariom session as  a middleware humne use kiya hai
 app.use(flash());
